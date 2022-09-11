@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "47477990-28da-4c34-b7d5-2f2eb74a3142",
+		"name": "Meteo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22627089"
+	},
+	"item": [
+		{
+			"name": "5 Days Forecast",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "weatherbit-v1-mashape.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/forecast/3hourly?lat=47.04&lon=21.91&units=metrics&lang=ro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"forecast",
+						"3hourly"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47.04"
+						},
+						{
+							"key": "lon",
+							"value": "21.91"
+						},
+						{
+							"key": "units",
+							"value": "metrics"
+						},
+						{
+							"key": "lang",
+							"value": "ro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Current Weather Data of a location",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "weatherbit-v1-mashape.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/current?lon=47.04&lat=21.91&units=metrics&lang=ro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"current"
+					],
+					"query": [
+						{
+							"key": "lon",
+							"value": "47.04"
+						},
+						{
+							"key": "lat",
+							"value": "21.91"
+						},
+						{
+							"key": "units",
+							"value": "metrics"
+						},
+						{
+							"key": "lang",
+							"value": "ro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Hour/Minutely Forecast",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "weatherbit-v1-mashape.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/forecast/minutely?lat=47.04&lon=21.91&units=metrics&lang=ro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"forecast",
+						"minutely"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47.04"
+						},
+						{
+							"key": "lon",
+							"value": "21.91"
+						},
+						{
+							"key": "units",
+							"value": "metrics"
+						},
+						{
+							"key": "lang",
+							"value": "ro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16 Day Forecast",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "weatherbit-v1-mashape.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/forecast/daily?lat=47.04&lon=21.91&units=metrics&lang=ro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47.04"
+						},
+						{
+							"key": "lon",
+							"value": "21.91"
+						},
+						{
+							"key": "units",
+							"value": "metrics"
+						},
+						{
+							"key": "lang",
+							"value": "ro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "120 Hour Forecast",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "weatherbit-v1-mashape.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/forecast/hourly?lat=47.04&lon=21.91&units=metrics&lang=ro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"forecast",
+						"hourly"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47.04"
+						},
+						{
+							"key": "lon",
+							"value": "21.91"
+						},
+						{
+							"key": "units",
+							"value": "metrics"
+						},
+						{
+							"key": "lang",
+							"value": "ro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Severe Weather Alerts",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "weatherbit-v1-mashape.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/alerts?lon=21.91&units=metrics&lang=ro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"alerts"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47.04",
+							"disabled": true
+						},
+						{
+							"key": "lon",
+							"value": "21.91"
+						},
+						{
+							"key": "units",
+							"value": "metrics"
+						},
+						{
+							"key": "lang",
+							"value": "ro"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "32fbb999e0msh4b6700a057c3428p149429jsne785c903668e",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-RapidAPI-Key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://weatherbit-v1-mashape.p.rapidapi.com",
+			"type": "string"
+		}
+	]
+}
